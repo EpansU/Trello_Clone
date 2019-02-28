@@ -1,0 +1,22 @@
+.list {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+li {
+    background: lightpink;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    width: 75%;
+    display: flex;
+}
+.delete{
+    display:flex;
+    justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+    .list{ width: 20%}
+}
