@@ -5,6 +5,7 @@ const AddItem = () => {
     return (
         <div className='form'>
             <input type='tex'/>
+            <button>Add</button>
         </div>
     )
 }

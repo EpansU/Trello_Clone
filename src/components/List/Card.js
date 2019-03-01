@@ -1,25 +1,22 @@
 import React from 'react';
-import AddItem from '../items/Add'
-import DeleteItem from '../items/Delete'
+import AddItem from '../items/Add';
 import './Card.css';
+import AddList from './AddList';
+import ListItem from './ListItem';
 
-
-
-const items = ["Wäsche machen" , "Task2", "Task3"]
-
-const listItems = 
-    items.map((item) => 
-        <li className='br3 grow shadow-5'>{item} <DeleteItem className='delete'/></li>
-    )
 
 
 const List = () => {
     return (
+        
         <div className='ba bg-light-green list shadow-5 br4'>
-            <p className='f3'>List</p>
+            <div className='cardHeader'>
+                <p >List</p>
+                <AddList className='newList'/>
+            </div>
             <AddItem/>
             <ul className='center'>
-                {listItems} 
+                <ListItem/>
             </ul>
         </div>
         

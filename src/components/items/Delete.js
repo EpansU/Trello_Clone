@@ -4,7 +4,7 @@ import React from 'react'
 const DeleteItem = () => {
     return(
         <div>
-            <button className='ph3 br-pill f5 pointer'>{'\u2715'}</button>
+            <p className='ph3 br-pill f5 pointer listButton grow'>{'\u2715'}</p>
         </div>
     )
 }
